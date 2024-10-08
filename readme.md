@@ -111,9 +111,8 @@ output "exadata-id" {
 | subscription_id | the ocid of the subscription with which resource needs to be associated with | `string` | n/a | No |
 | system_version | Operating system version of the image | `string` | n/a | No |
 | time_zone | The time zone to use for the cloud VM cluster. For details, see Time Zones | `string` | n/a | No |
-| groups | list of azure AD groups that will manage objects inside the bucket | `list(string)` | n/a | No |
+| groups | list of azure AD groups that will manage objects inside the bucket | `list(string)` | `[]` | No |
 | compartment | compartment name that will be used for policy creation | `string` | n/a | No |
-| enable_group_access | enables the policy creation. If true the groups var should have a least one value | `bool` | `true` | No |
 
 # Object variables for blocks
 
